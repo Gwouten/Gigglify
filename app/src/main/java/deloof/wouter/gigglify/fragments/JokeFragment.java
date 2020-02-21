@@ -42,8 +42,8 @@ public class JokeFragment extends Fragment {
         // oriëntatie recycler, als lijst of grid
         RecyclerView.LayoutManager manager;
 
-//        manager = new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false);
-        manager = new GridLayoutManager(getContext(), 2);
+        manager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
+//        manager = new GridLayoutManager(getContext(), 2);
 
         rvJokes.setLayoutManager(manager);
         //adpater om data in te vullen in de card layout

@@ -17,5 +17,18 @@
         android:id="@+id/jokeFragment"
         android:name="deloof.wouter.gigglify.fragments.JokeFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_joke" />
+        tools:layout="@layout/fragment_joke" >
+        <action
+            android:id="@+id/jokelist_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="deloof.wouter.gigglify.fragments.detailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="passedJoke"
+            app:argType="deloof.wouter.gigglify.model.Joke" />
+    </fragment>
 </navigation>
